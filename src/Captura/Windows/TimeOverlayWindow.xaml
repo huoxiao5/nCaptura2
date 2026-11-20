@@ -1,0 +1,28 @@
+﻿<Window x:Class="Captura.TimeOverlayWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        WindowStyle="None"
+        AllowsTransparency="False"      
+        Background="Transparent"
+        Topmost="True"
+        ShowInTaskbar="False"
+        SizeToContent="WidthAndHeight"
+        ResizeMode="NoResize">
+
+    <!-- 1. 去掉上下 Padding，只保留左右：Padding="6,0" -->
+    <Border Background="#AA000000" 
+            Cursor="SizeAll" 
+            MouseLeftButtonDown="Border_MouseLeftButtonDown"
+            Padding="6,0">
+
+        <!-- 2. 核心：加入负边距 Margin="0,-4,0,-4"，强行切掉 WPF 预留的上下空白 -->
+        <TextBlock Name="TimeText" 
+                   Text="0000-00-00 00:00:00" 
+                   Foreground="#FFFF00" 
+                   FontSize="15" 
+                   FontWeight="Light" 
+                   FontFamily="Consolas"
+                   Margin="0,-4,0,-4"
+                   VerticalAlignment="Center"/>
+    </Border>
+</Window>
