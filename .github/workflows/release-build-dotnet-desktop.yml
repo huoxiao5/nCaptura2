@@ -214,7 +214,17 @@ jobs:
 
           ### What's New
 
-          ✅ **Fixed FFmpeg Downloader** - Now uses reliable mirrors with automatic fallback  
+          
+	 ### 1. Recording Status Indicator Border
+		Added a flashing, color-changing border for **Region Recording** and **Window Recording** modes. This border provides a clear visual reminder that the screen is currently being recorded.
+	 ### 2. Draggable Timestamp Overlay
+Added a timestamp overlay during recording. You can freely drag it to any position on your screen, and it will be captured in the final video.
+	 ### 3. Floating Recording Status Bar
+Added a floating status bar during recording. It displays the **current recording duration**, **real-time file size**, and a **pause button** with a quick action dialog.
+	 ### 4. Enhanced Scheduled Recording & Auto-Shutdown
+Modified the scheduled recording feature. Previously, you could only set the duration in seconds. Now, it supports setting **Hours, Minutes, and Seconds**. 
+Additionally, added an **auto-shutdown** option, allowing your PC to automatically shut down after the scheduled recording finishes.
+
           ✅ **Windows Installer** - Professional .exe installer included  
           ✅ **Portable Package** - Also available as portable ZIP
 
